@@ -1,0 +1,71 @@
+body{
+    font-family: cursive;
+    text-align: center;
+}
+p{
+    color:black;
+    text-align: center;
+   
+}
+button{
+    text-align: center;
+}
+.convo {
+    color: black;
+    text-align: center;
+}
+.wow{
+    color: grey;
+    text-align: center;
+}
+.about{
+    color: silver;
+    background-image: url("../images/StiensGate.jpg"); /* had to change this since this is a css file not an html anymore*/
+    padding: 8px ;
+    margin-top: 0px; /* I removed the margin since it looked better without it */ 
+    text-align: center;
+}
+.one{
+    color: pink;
+}
+.two{
+    color: blue;
+}
+.three{
+    color: grey;
+}
+.four{
+    color: brown;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.column{
+    float:right ;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.card{
+    box-shadow: -10px 10px 8px 0px #b3b3b3f5;
+   
+}
+.button{
+ background-color: silver;
+}
+.warning{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    box-shadow: -10px 10px 8px 0px #b3b3b3f5;
+}
+.center {
+    
+    position: relative;
+    top: 50%;
+    left: 35%;
+    
+  }
+.emblem{
+    height: 100px;
+    width: 100px;
+  }

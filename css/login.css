@@ -1,6 +1,6 @@
 .bg-cover{
     background-image: url("../images/Background.jpg");
-    height: 100vh;
+    height: max-content; /* made this height max content to get rid of unwanted white space*/
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -18,3 +18,8 @@
     padding: 25px;
     text-align: center ;
 }
+
+input{
+    margin-bottom: 10px;
+}
+
