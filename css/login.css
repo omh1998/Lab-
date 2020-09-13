@@ -1,0 +1,20 @@
+.bg-cover{
+    background-image: url("../images/Background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; /* ^ this is to eliminate image repeating, since it sometimes compensate for the lack of size on the picture. */
+    
+}
+
+.center-me{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-signin {
+    padding: 25px;
+    text-align: center ;
+}
