@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html class="no-js"> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Login</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/login.css">
-    </head>
 
-    <body>
+<?php
+require 'includes/header.php'
+?>
+
+<main>
+<link rel="stylesheet" href="css/about.css">
         <div class="bg-cover">
 
             <div class = "container" style="padding: 50px;" >
@@ -55,29 +47,29 @@
             <div class="h-40 center-me">
                 <!-- Pretty cool sample for a sign in page that is take from https://getbootstrap.com/docs/4.0/examples/sign-in/ -->
                 <div class="my-auto">
-                    <form class="form-signin" style="background:transparent;"> <!-- Transparent color, neat-->
-                      <img class="mb-4" src="images/Signin.jpg" alt="" width="72" height="72">
+                    <form class="form-signin" action="includes/login-helper.php" method="post" style="background:transparent;"> <!-- Transparent color, neat-->
+                      <img class="mb-4" src="images/Signin.jpg" alt="" width="15" height="15">
                         <h1 class="h3 mb-3 font-weight-normal; " style="color: white;">Please sign in</h1> <!-- added a style color tag to make the text more visible.-->
 
-                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <label for="inputEmail" class="sr-only">Username or Email Address</label>
 
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <input type="text" id="inputEmail" name="uname" class="form-control" placeholder="Email / Username" required autofocus>
 
                         <label for="inputPassword" class="sr-only">Password</label> <!-- sr = screen reader accesability feature-->
 
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <input type="password" id="inputPassword" name="pwd" class="form-control" placeholder="Password" required>
 
                         <div class="checkbox mb-3" style="margin: 0px; color: white;">
 
                           <label>
-                            <input type="checkbox" value="remember-me" "> Remember me <!-- for some reason the color doesnt wanna change here :/ SOLVED: we fix that from the origin div, nice-->
+                            <input type="checkbox" value="remember-me" > Remember me <!-- for some reason the color doesnt wanna change here :/ SOLVED: we fix that from the origin div, nice-->
                            </label>
 
                         </div>
 
-                        <button class="btn btn-lg btn-primary btn-block; " type="submit" style="color: black; background-color: white;">Sign in</button>
+                        <button class="btn btn-lg btn-primary btn-block;" name="login-submit" type="submit" style="color: black; background-color: white;">Sign in</button>
                         <li class="nav-item">
-                          <a class="nav-link" href="about.html" style="color: white;"> Back </a>
+                          <a class="nav-link" href="about.php" style="color: white;"> Back </a>
                           <div class="text-center" style="color: white;"> Not a member? <a href= "signup.php">Sign up</a></div>
                         </li>
                         <p class="mt-5 mb-3 text-muted">&copy; 2047-2048</p> <!-- the & sign before copy is to indicate special characters such as the copyright sign-->
@@ -87,5 +79,4 @@
 
             </div>
         </div>
-    </body>
-</html>
+  </main>
