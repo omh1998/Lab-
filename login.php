@@ -7,7 +7,7 @@ require 'includes/header.php'
 <link rel="stylesheet" href="css/about.css">
         <div class="bg-cover">
 
-            <div class = "container" style="padding: 50px;" >
+            <div class = "container" style="padding: 25px;" > <!-- was 50 px -->
                 <div id="slides" class="carousel slide col-md-8 offset-md-2" data-ride="carousel"  style="margin-top: 10px; margin-bottom: 10px;" > <!-- this is to indicate that this is a carousel-->
                     <ol class="carousel-indicators">
                       <li data-target="#slides" data-slide-to="0" class="active"></li> <!-- this is the activation and where most of the "magic" is-->
@@ -44,11 +44,11 @@ require 'includes/header.php'
                   </div>
             </div>
 
-            <div class="h-40 center-me">
+            <div class="h-40 center-me"> <!-- was h-40-->
                 <!-- Pretty cool sample for a sign in page that is take from https://getbootstrap.com/docs/4.0/examples/sign-in/ -->
                 <div class="my-auto">
                     <form class="form-signin" action="includes/login-helper.php" method="post" style="background:transparent;"> <!-- Transparent color, neat-->
-                      <img class="mb-4" src="images/Signin.jpg" alt="" width="15" height="15">
+                      <img class="mb-4" src="images/Signin.jpg" alt="" width="00" height="00">
                         <h1 class="h3 mb-3 font-weight-normal; " style="color: white;">Please sign in</h1> <!-- added a style color tag to make the text more visible.-->
 
                         <label for="inputEmail" class="sr-only">Username or Email Address</label>

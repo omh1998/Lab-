@@ -52,7 +52,7 @@ require 'includes/header.php'
                         <h2 class="two">The Bubbly Upa</h2>
                             <div class= "center">
                             
-                            <button type="button"> Buy Me!</button>
+                            <button type="button" > Buy Me!</button>
                             
                             </div>
                         <p>$1945.00</p>

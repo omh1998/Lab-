@@ -21,7 +21,7 @@ if(isset($_POST['login-submit'])){
         mysqli_stmt_bind_param($stmt, "ss", $uname_email, $uname_email);
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
-        $data = mysqli_fetch_assoc($results);
+        $data = mysqli_fetch_assoc($result);
 
         if(empty($data)){
             header("Location: ../login.php?error=UserDNE");
@@ -34,7 +34,7 @@ if(isset($_POST['login-submit'])){
                 session_start();
                 $_SESSION['uid'] = $data['uid'];
                 $_SESSION['fname'] = $data['fname'];
-                $_SESSION['username'] = $data['username']; ##grabing info from our database
+                $_SESSION['username'] = $data['uname']; ##grabing info from our database
 
                 header("Location: ../profile.php?login=Success");
                 exit();

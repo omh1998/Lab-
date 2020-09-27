@@ -5,7 +5,7 @@ require 'includes/header.php'
 <main>
       
 <?php 
-if(isset($_SESSION['username'])){
+if(isset($_SESSION['username'])){ ## maybe change it to uid
     include 'html/profile.html'; ## adding an html page into this pfp page
 }
 else{
