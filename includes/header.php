@@ -63,7 +63,7 @@ session_start();
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="signup.php">Sign up</a>
                     <div class="dropdown-divider"></div> <!-- things like deviders and -->
-                    <a class="dropdown-item" href="login.php">Sign in again</a>
+                    <a class="dropdown-item" href="profile.php">Profile</a>
                     <div class="dropdown-divider"></div>
                   </div>
                 </li>

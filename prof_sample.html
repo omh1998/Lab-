@@ -1,0 +1,40 @@
+<style>
+    .center-me {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        text-align: "center";
+    }
+    #prof-display {
+        display: block;
+        
+        width: 150px;
+        margin: 10px auto;
+        border-radius: 50%;
+    }
+    
+    #uname-style {
+        font-size: 20px;
+        font-family: "Lucida Console", Courier, monospace;
+        font-weight: bold;
+    }
+    
+    </style>
+    
+    <script>
+        function triggered(){
+            document.querySelector("#prof-image").click();
+        }
+    
+        function preview(e){
+            if(e.files[0]){
+                var reader = new FileReader();
+    
+                reader.onload = function(e){
+                    document.querySelector('#prof-display').setAttribute('src',e.target.result);
+                }
+                reader.readAsDataURL(e.files[0]);
+    
+            }
+        }
+    </script>
