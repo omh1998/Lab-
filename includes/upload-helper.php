@@ -19,7 +19,7 @@ if (isset($_POST['prof-submit'])) {
 
     $ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 
-    $allowed = array('jpg', 'jpeg','png', 'svg', 'bmp');
+    $allowed = array('jpg', 'jpeg','png', 'svg', 'bmp','gif');
 
     if($file_error !== 0){
 
