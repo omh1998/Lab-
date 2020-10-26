@@ -22,7 +22,7 @@ require 'includes/review-helper.php';
                     <input type="text" name="review-title" id="review-title" style="width: 100%; margin-bottom: 10px;">
                     <textarea class="form-control" id="review-text" name="review" cols="50" rows="3" placeholder="Enter a comment..."></textarea>
                     <input type="hidden" name="rating" id="rating">
-                    <input type="hidden" name="item_id" value="<?php echo $_GET['id']?>">
+                    <input type="hidden" name="item_id" value="<?php echo $_GET['id'];?>"> 
                 </div>
                 <div class="form-group">
                     <button class="btn btn-outline-danger" id="review-submit" name="review-submit" type="submit" style="width: 100%;">Review</button>
@@ -37,7 +37,7 @@ require 'includes/review-helper.php';
 <script type="text/javascript">
 
 var rateIndex = -1;
-var id = <?php echo $_GET['id']?>;
+var id = <?php echo $_GET['id'];?>;
 $(document).ready(function() {
     reset_star();
 
@@ -87,7 +87,7 @@ $(document).ready(function() {
     //Used to interchangeably send GET requests for review display data. 
     
 
-    function xhr_getter(prefix, eLement){ //<---is element written correctly? 
+    function xhr_getter(prefix, element){ //<---is element written correctly? 
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function(){
 

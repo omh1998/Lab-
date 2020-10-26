@@ -22,8 +22,8 @@ require 'includes/header.php';
                echo '<div class="card">
                 <a href="review.php?id='.$row['pid'].'">
                     <img src="memes/'.$row["picpath"].'">
-                    <h3>'.$row['title'].'</h3>
-                    <p>'.$row['descript'].'</p>
+                    <h3>'.$row["title"].'</h3>
+                    <p>'.$row["descript"].'</p>
                 </a>
 
                 </div>';
